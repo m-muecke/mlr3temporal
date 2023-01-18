@@ -114,9 +114,9 @@ paper:Ch. Bergmeir, R. J. Hyndman, B. Koo, A note on the validity of cross-valid
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># Individual sets:</span></span></span>
 <span class="r-in"><span><span class="va">rfho</span><span class="op">$</span><span class="fu">train_set</span><span class="op">(</span><span class="fl">1</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [1]  1  2  3  4  5  6  7  8  9 10 11</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [1]  1  2  3  4  5  6  7  8  9 10</span>
 <span class="r-in"><span><span class="va">rfho</span><span class="op">$</span><span class="fu">test_set</span><span class="op">(</span><span class="fl">1</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 12 13 14 15 16</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 11 12 13 14 15</span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/sets.html" class="external-link">intersect</a></span><span class="op">(</span><span class="va">rfho</span><span class="op">$</span><span class="fu">train_set</span><span class="op">(</span><span class="fl">1</span><span class="op">)</span>, <span class="va">rfho</span><span class="op">$</span><span class="fu">test_set</span><span class="op">(</span><span class="fl">1</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> integer(0)</span>
 <span class="r-in"><span></span></span>
@@ -124,10 +124,10 @@ paper:Ch. Bergmeir, R. J. Hyndman, B. Koo, A note on the validity of cross-valid
 <span class="r-in"><span><span class="va">rfho</span><span class="op">$</span><span class="va">instance</span> <span class="co">#  list</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $train</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $train[[1]]</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [1]  1  2  3  4  5  6  7  8  9 10 11</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [1]  1  2  3  4  5  6  7  8  9 10</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $train[[2]]</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [1]  1  2  3  4  5  6  7  8  9 10 11 12 13</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [1]  1  2  3  4  5  6  7  8  9 10 11</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $train[[3]]</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  [1]  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15</span>
@@ -135,10 +135,10 @@ paper:Ch. Bergmeir, R. J. Hyndman, B. Koo, A note on the validity of cross-valid
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $test</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $test[[1]]</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 12 13 14 15 16</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 11 12 13 14 15</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $test[[2]]</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 14 15 16 17 18</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 12 13 14 15 16</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $test[[3]]</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] 16 17 18 19 20</span>
